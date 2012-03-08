@@ -1,0 +1,24 @@
+#sdk: "/usr/lib/ruby/gems/1.8/gems/rhodes-3.3.2"
+sdkversion: 3.3.2
+name: wac
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.wac
+  BundleURLScheme: wac
+wp:
+  productid: 'c4a0cc20-499e-012f-0755-18a905e523e0'
+symbian:
+  uid: '0xefd974fd'
+android:
+  version: 4.0.3
+
+extensions: ["rexml", "set"]

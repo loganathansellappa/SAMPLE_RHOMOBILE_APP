@@ -1,0 +1,70 @@
+<div data-role="page" data-add-back-btn="true">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1><%= @developer.developer_id %></h1>
+    <%= link_to "Edit", :action => :edit, :id => @developer.object %>
+  </div>
+
+  <div data-role="content">
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">DeveloperId</td>
+        <td class="itemValue"><%= @developer.developer_id%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">FirstName</td>
+        <td class="itemValue"><%= @developer.first_name%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">LastName</td>
+        <td class="itemValue"><%= @developer.last_name%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Email</td>
+        <td class="itemValue"><%= @developer.email%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">UserName</td>
+        <td class="itemValue"><%= @developer.user_name%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Status</td>
+        <td class="itemValue"><%= @developer.status%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Locale</td>
+        <td class="itemValue"><%= @developer.locale%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Organization</td>
+        <td class="itemValue"><%= @developer.organization%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Address</td>
+        <td class="itemValue"><%= @developer.address%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">SupportContact</td>
+        <td class="itemValue"><%= @developer.support_contact%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">SupportPhone</td>
+        <td class="itemValue"><%= @developer.support_phone%></td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>

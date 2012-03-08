@@ -1,0 +1,75 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>New <%= @developer.title %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :create %>">
+      <input type="hidden" name="id" value="<%= @developer.object %>"/>
+
+      
+          <div data-role="fieldcontain">
+            <label for="developer[developer_id]" class="fieldLabel">Id</label>
+            <input type="text" id="developer[developer_id]" name="developer[developer_id]" <%= placeholder("Developer") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[first_name]" class="fieldLabel">First name</label>
+            <input type="text" id="developer[first_name]" name="developer[first_name]" <%= placeholder("First name") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[last_name]" class="fieldLabel">Last name</label>
+            <input type="text" id="developer[last_name]" name="developer[last_name]" <%= placeholder("Last name") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[email]" class="fieldLabel">Email</label>
+            <input type="text" id="developer[email]" name="developer[email]" <%= placeholder("Email") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[user_name]" class="fieldLabel">User name</label>
+            <input type="text" id="developer[user_name]" name="developer[user_name]" <%= placeholder("User name") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[status]" class="fieldLabel">Status</label>
+            <input type="text" id="developer[status]" name="developer[status]" <%= placeholder("Status") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[locale]" class="fieldLabel">Locale</label>
+            <input type="text" id="developer[locale]" name="developer[locale]" <%= placeholder("Locale") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[organization]" class="fieldLabel">Organization</label>
+            <input type="text" id="developer[organization]" name="developer[organization]" <%= placeholder("Organization") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[address]" class="fieldLabel">Address</label>
+            <input type="text" id="developer[address]" name="developer[address]" <%= placeholder("Address") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[support_contact]" class="fieldLabel">Support contact</label>
+            <input type="text" id="developer[support_contact]" name="developer[support_contact]" <%= placeholder("Support contact") %> />
+          </div>
+      
+          <div data-role="fieldcontain">
+            <label for="developer[support_phone]" class="fieldLabel">Support phone</label>
+            <input type="text" id="developer[support_phone]" name="developer[support_phone]" <%= placeholder("Support phone") %> />
+          </div>
+      
+
+      <input type="submit" value="Create"/>
+    </form>
+  </div>
+
+</div>
